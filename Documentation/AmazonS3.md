@@ -49,5 +49,3 @@ See https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html for more 
 * The bucket name appears in the Buckets list. Click the name then click Access Points. Click Create Access Point. Enter a name, select Internet for Network Origin, leave other settings at default (or change them as desired), and click Create Access Point.
 
 ![](createaccesspoint.png)
-
-*** TODO: show S3 portal so can see how documents are stored
