@@ -26,3 +26,12 @@ The Samples folder has a sample form that demonstrates the use of the Document c
 
 * After creating one or more documents for an order, select the Documents tab to see a list of documents. Select one and click View to download it from S3 and view it in your default PDF viewer. Click Add to display a form to manually add a document or remove to remove the selected document.
 
+## Helping with this project
+
+See [How to contribute to Document](.github/CONTRIBUTING.md) for details on how to help with this project.
+
+## Releases
+
+The latest version is 2025.07.29 (the cVersion property of the Document class).
+
+See the [change log](ChangeLog.md) for release information.
