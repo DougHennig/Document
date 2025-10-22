@@ -1051,9 +1051,9 @@ DEFINE CLASS frmorders AS vfpxbaseform OF "vfpxbaselibrary.vcx"
 		messagebox('The PDF should be named ' + lcFileName + ' (on the clipboard).', ;
 			64, 'Invoice')
 		lcPrinter = set('PRINTER', 3)
-		set printer to 'Microsoft Print to PDF'
+		set printer to name 'Microsoft Print to PDF'
 		report form Invoice to printer noconsole
-		set printer to (lcPrinter)
+		set printer to name (lcPrinter)
 		Sleep(3000)
 			&& pause to allow the document to be written
 		if Thisform.oDocument.AddDocument(lcFileName, 'Invoice', Record.Order_ID)
@@ -1094,9 +1094,9 @@ DEFINE CLASS frmorders AS vfpxbaseform OF "vfpxbaselibrary.vcx"
 		messagebox('The PDF should be named ' + lcFileName + ' (on the clipboard).', ;
 			64, 'Invoice')
 		lcPrinter = set('PRINTER', 3)
-		set printer to 'Microsoft Print to PDF'
+		set printer to name 'Microsoft Print to PDF'
 		report form PackingSlip to printer noconsole
-		set printer to (lcPrinter)
+		set printer to name (lcPrinter)
 		Sleep(3000)
 			&& pause to allow the document to be written
 		if Thisform.oDocument.AddDocument(lcFileName, 'Packing Slip', Record.Order_ID)
@@ -1127,9 +1127,9 @@ DEFINE CLASS frmorders AS vfpxbaseform OF "vfpxbaselibrary.vcx"
 		messagebox('The PDF should be named ' + lcFileName + ' (on the clipboard).', ;
 			64, 'Invoice')
 		lcPrinter = set('PRINTER', 3)
-		set printer to 'Microsoft Print to PDF'
+		set printer to name 'Microsoft Print to PDF'
 		report form PickingList to printer noconsole
-		set printer to (lcPrinter)
+		set printer to name (lcPrinter)
 		Sleep(3000)
 			&& pause to allow the document to be written
 		if Thisform.oDocument.AddDocument(lcFileName, 'Picking List', Record.Order_ID)
